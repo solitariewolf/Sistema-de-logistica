@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Logout - YLog</title>
+    <script>
+    // Redireciona a página inteira, incluindo o frame, para o ../index.html
+    window.top.location.href = "../index.html";
+    </script>
+</head>
+<body>
+    <h2>Logout - YLog</h2>
+
+    <?php
+    // Limpa os cookies da sessão
+    if (isset($_COOKIE[session_name()])) {
+        setcookie(session_name(), '', time()-42000, '/');
+    }
+
+    // Destrói a sessão
+    session_destroy();
+
+    echo "<p>Você foi desconectado com sucesso!</p>";
+    ?>
+</body>
+</html>
