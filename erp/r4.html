@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cadastro de Veículos</title>
+  <link rel="stylesheet" type="text/css" href="styler4.css">
+  <script type="text/javascript" src="validacoes.js"></script>
+</head>
+<body>
+  <h2>Cadastro de Veículos</h2>
+  <form id="cadastroVeiculoForm" onsubmit="return validarFormulario()">
+    <label for="placa">Placa:</label>
+    <input type="text" id="placa" name="placa">
+
+    <label for="renavam">Renavam:</label>
+    <input type="text" id="renavam" name="renavam">
+
+    <label for="cpfCnpj">CPF/CNPJ do Proprietário:</label>
+    <input type="text" id="cpfCnpj" name="cpfCnpj">
+
+    <label for="tipoVeiculo">Tipo de Veículo:</label>
+    <select id="tipoVeiculo" name="tipoVeiculo">
+      <option value="">Selecione</option>
+      <option value="caminhao3/4">Caminhão ¾ ou VUC</option>
+      <option value="caminhaoToco">Caminhão Toco ou Semipesado</option>
+      <option value="caminhaoTruck">Caminhão Truck ou Caminhão Pesado</option>
+      <option value="cavaloMecanico">Cavalo Mecânico ou Caminhão Extrapesado</option>
+      <option value="cavaloMecanicoTrucado">Cavalo Mecânico Trucado ou LS</option>
+    </select>
+
+    <label for="antt">ANTT:</label>
+    <input type="text" id="antt" name="antt">
+
+    <div class="botoes">
+      <input type="submit" value="Salvar" class="botaoSalvar">
+      <input type="button" value="Cancelar" class="botaoCancelar" onclick="confirmarCancelamento()">
+    </div>
+  </form>
+
+  <script type="text/javascript">
+    function validarFormulario() {
+      var placa = document.getElementById('placa').value;
+      var renavam = document.getElementById('renavam').value;
+      var cpfCnpj = document.getElementById('cpfCnpj').value;
+      var tipoVeiculo = document.getElementById('tipoVeiculo').value;
+      var antt = document.getElementById('antt').value;
+
+      if (placa === '' || renavam === '' || cpfCnpj === '' || tipoVeiculo === '' || antt === '') {
+        alert('Por favor, preencha todos os campos.');
+        return false;
+      }
+
+      // Outras validações...
+
+      return true;
+    }
+
+    function confirmarCancelamento() {
+      if (confirm('Deseja realmente cancelar o cadastro do veículo?')) {
+        // Redirecionar para a página desejada ou executar outra ação
+      }
+    }
+  </script>
+</body>
+</html>

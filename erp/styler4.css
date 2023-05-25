@@ -1,0 +1,81 @@
+/* styler4.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('arrow_down.png') no-repeat;
+    background-position: right center;
+    background-size: 15px;
+    padding-right: 25px;
+}
+
+input[type="submit"],
+button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"].green-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+}
+
+button.red-button {
+    background-color: #FF0000;
+    color: #fff;
+    border: none;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    margin-left: 10px;
+}
+
+.button-container button:first-child {
+    margin-left: 0;
+}
