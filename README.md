@@ -1,4 +1,4 @@
-# 🚚 YLog - Sistema de ERP Logístico
+# 🚚 YLog - Sistema de ERP Logístico (Beta) #Em fase de construção
 
 O YLog é um sistema de ERP (Enterprise Resource Planning) Logístico desenvolvido para auxiliar na gestão de operações de transporte e logística.
 
