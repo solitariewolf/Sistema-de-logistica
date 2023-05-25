@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="styler3.css">
+</head>
+<body>
+    <h2>Cadastro de Usuário</h2>
+    <form action="cadastro.php" method="POST">
+        <label for="username">Nome de Usuário:</label>
+        <input type="text" name="username" id="username" required>
+
+        <label for="password">Senha:</label>
+        <input type="password" name="password" id="password" required>
+
+        <h3>Permissões:</h3>
+        <div class="checkbox-grid">
+            <label><input type="checkbox" name="permissions[]" value="r1">Rotina 1</label>
+            <label><input type="checkbox" name="permissions[]" value="r2">Rotina 2</label>
+            <label><input type="checkbox" name="permissions[]" value="r3">Rotina 3</label>
+            <label><input type="checkbox" name="permissions[]" value="r4">Rotina 4</label>
+            <label><input type="checkbox" name="permissions[]" value="r5">Rotina 5</label>
+            <label><input type="checkbox" name="permissions[]" value="r6">Rotina 6</label>
+            <label><input type="checkbox" name="permissions[]" value="r7">Rotina 7</label>
+            <label><input type="checkbox" name="permissions[]" value="r8">Rotina 8</label>
+            <label><input type="checkbox" name="permissions[]" value="r9">Rotina 9</label>
+            <label><input type="checkbox" name="permissions[]" value="r10">Rotina 10</label>
+        </div>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>

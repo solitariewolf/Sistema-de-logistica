@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+}
+
+.menu {
+    background-color: #f2f2f2;
+    width: 200px;
+    padding: 20px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul.grid-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.grid-menu li {
+    margin-bottom: 10px;
+}
+
+ul.grid-menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #4e98d1;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+ul.grid-menu li a:hover {
+    background-color: #265e8d;
+}
+
+.iframe-container {
+    flex-grow: 1;
+}
+
+iframe {
+    width: 100%;
+    height: calc(100vh - 40px);
+    border: none;
+}
