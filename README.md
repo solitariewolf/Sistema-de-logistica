@@ -34,4 +34,4 @@ O YLog é uma aplicação web desenvolvida em PHP e MySQL, que permite realizar 
 
 ## 📝 Contribuição
 
-Contribuições são bem-vindas! Se você quiser melhorar o YLog, sinta-se à vontade para fazer um fork deste repositório, fazer as alterações e enviar um pull request.
+Contribuições são bem-vindas! Se você quiser melhorar o YLog, sinta-se à vontade para fazer um fork deste repositório, fazer as alterações e enviar um pull request.!!!
